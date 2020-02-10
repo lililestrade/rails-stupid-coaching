@@ -1,0 +1,14 @@
+<h1>Questions#answer</h1>
+<!-- <p>Find me in app/views/questions/answer.html.erb</p> -->
+
+<% if params['question'] == 'I am going to work' %>
+  <%= 'Great!' %>
+<% elsif %>
+  <% params['question'].include?('?') %>
+  <%= 'Silly question, get dressed and go to work!' %>
+<% else %>
+<%= "I don't care, get dressed and go to work!" %>
+<% end %>
+<p><em>--Your coach</em></p>
+
+<%= link_to "Ask a new question", ask_path %>
